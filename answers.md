@@ -59,4 +59,6 @@ In general you will see that the lower number n calls gets called a lot of times
 
 - **6)**
 
+Since each of the subproblems will only need to be called once using dynamic 
+
 - **8)**
