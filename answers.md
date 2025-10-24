@@ -12,7 +12,7 @@ Place all written answers from `recitation-07.md` here for easier grading.
 
 Recurrence Relation:\
 W(n) = W(n-1) + W(n-2) + 1\
-W(0) = W(1) = 1\
+W(0) = W(1) = 1
 
 Solving Recurrence Relation:\
 Define A(n) = W(n) + 1 to remove '+ 1'\
@@ -39,19 +39,19 @@ $W(n) \in O(2^n)$
 
 Recurrence Relation:\
 S(n) = max(S(n-1) + S(n-2)) + 1\
-S(0) = S(1) = 1\
+S(0) = S(1) = 1
 
 Solving Recurrence Relation:\
 Since we know S(n-1) will always be larger than s(n-2)\
 so S(n) = S(n-1)+ 1\
-Since this recurrence relatiion is balanced (each level of the expanded tree is equal) we can say:\
+Since this recurrence relatiion is balanced (each level of the expanded tree is equal) we can say:
 
 $S(n) \in O(n)$
 
 - **4)**
 
 This is the count list, each element n-1 corresponding of the frequency of calls for a f(n):\
-[34, 55, 34, 21, 13, 8, 5, 3, 2, 1, 1]\
+[34, 55, 34, 21, 13, 8, 5, 3, 2, 1, 1]
 
 You will notice f(1) gets called more than f(0) and f(0) and f(2) get called an equal amount of times\
 In general you will see that the lower number n calls gets called a lot of times while the higher number n calls gets called less.
@@ -61,9 +61,14 @@ In general you will see that the lower number n calls gets called a lot of times
 
 Since each of the subproblems will only need to be called once because of memorization, the work and span should both be\
 $W(n) \in O(n)$\
-$W(n) \in O(n)$\
+$S(n) \in O(n)$\
 This is since the lookup cost is always 1, the work will only mostly dependent on the work of each of the works of the unique subproblems which will just dependent on smaller's subproblems which is memozed, the work will just be O(n), same with span.
 
 - **8)**
 
-The maximum amount of times the $f_i$ will be read for any value $i$ will be 2. For example if you try to find
+The maximum amount of times the $f_i$ will be read for any value $i$ will be 2.\
+For example if you try to find $f_3$, you have to find $f_2$ and $f_1$ and then call $f_1$ and $f_0$ for $f_2$. In this case $f_1$ was called twice.\
+The work and span of this fibonaci implementation will be\
+$W(n) \in O(n)$\
+$S(n) \in O(n)$\
+as the whole algorithm is just one for loop.
