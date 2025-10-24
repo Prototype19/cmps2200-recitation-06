@@ -50,6 +50,13 @@ $S(n) \in O(n)$
 
 - **4)**
 
+This is the count list, each element n-1 corresponding of the frequency of calls for a f(n):\
+[34, 55, 34, 21, 13, 8, 5, 3, 2, 1, 1]\
+
+You will notice f(1) gets called more than f(0) and f(0) and f(2) get called an equal amount of times\
+In general you will see that the lower number n calls gets called a lot of times while the higher number n calls gets called less.
+
+
 - **6)**
 
 - **8)**
