@@ -65,3 +65,5 @@ $W(n) \in O(n)$\
 This is since the lookup cost is always 1, the work will only mostly dependent on the work of each of the works of the unique subproblems which will just dependent on smaller's subproblems which is memozed, the work will just be O(n), same with span.
 
 - **8)**
+
+The maximum amount of times the $f_i$ will be read for any value $i$ will be 2. For example if you try to find
