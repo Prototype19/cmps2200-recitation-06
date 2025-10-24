@@ -17,3 +17,6 @@ def test_fib_bottom_up():
     n = 10
     assert fib_bottom_up(n) == 55
 
+test_fib_recursive()
+test_fib_top_down()
+test_fib_bottom_up()
