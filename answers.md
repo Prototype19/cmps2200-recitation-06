@@ -59,6 +59,9 @@ In general you will see that the lower number n calls gets called a lot of times
 
 - **6)**
 
-Since each of the subproblems will only need to be called once using dynamic 
+Since each of the subproblems will only need to be called once because of memorization, the work and span should both be\
+$W(n) \in O(n)$\
+$W(n) \in O(n)$\
+This is since the lookup cost is always 1, the work will only mostly dependent on the work of each of the works of the unique subproblems which will just dependent on smaller's subproblems which is memozed, the work will just be O(n), same with span.
 
 - **8)**
